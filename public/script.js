@@ -46,7 +46,7 @@ searchInput.addEventListener('keyup',displayMatches);
 
 
 
-document.body.addEventListener('submit', async (e) => {
+document.body.addEventListener('submit', async (e) => { // I got this from lab 7,not sure if it is needed
     e.preventDefault(); 
     const form = $(e.target).serializeArray();
     fetch('/api', {
