@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 app.route('/api')
-  .get((req, res) => {
+  .get(async(req, res) => {
     console.log('GET request detected');
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
@@ -33,8 +33,6 @@ app.route('/api')
     const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
     const json = await data.json();
     console.log('Fetch request data', data);
-    /*res.status(200).send('Hello World')  /* might need to comment this out */
-    // res.json(countries);
     res.json(json);
   });
 
