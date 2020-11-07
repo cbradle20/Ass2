@@ -5,17 +5,29 @@
     <title>Ben, Colin, and Juan's Assignment 2</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet"> 
+</head>
+
 <body>
-<div class="container">
-    <div class="wrapper">
-       <!--<div class="header">--> 
+<div class="wrapper">
+    <div class="header">
         <h1 class="header">Assignment 2</h1>
+    </div>
+
+    <div class="container">
     
-          <!--<gotta fix this>--> 
     <form action="/api" method="post">
-    <form>
-        <input placeholder="Enter some text" name="name"/>
-        <p id="values"></p>
+        <div class="row">
+    
+            <div class = "col">
+                <input placeholder="Enter some text" class ="userInput" type = "text"></input>
+            </div>
+        
+            <div class = "cols">
+                <ul class="suggestions"></ul>
+            </div>
+
+        </div>
+    </form>
     </div>
 </div>
 <script href="script.js">
