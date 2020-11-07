@@ -18,7 +18,7 @@ function findMatches(wordToMatch, arr1) {
 }
 
 function displayMatches() { 
-    const matchArray = findmatches(this.value, arr1);
+    const matchArray = findMatches(this.value, arr1);
     const html = matchArray.map(restaurant => { 
      // const regex = new RegExp(this.value,'gi');
      // const name = arr1.name.replace(regex, `<span class="name">'${this.
@@ -38,14 +38,14 @@ function displayMatches() {
             <span class="category">${restaurant.category}</span>
         </li>
         `;
-    }).json('');
+    });
     suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.userInput');
 const suggestions = document.querySelector('.suggestions');
 
-searchInput.addEventListener('change',displayMatches);
+//searchInput.addEventListener('change',displayMatches);
 searchInput.addEventListener('keyup',displayMatches);
 
 
