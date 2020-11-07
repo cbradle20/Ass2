@@ -1,16 +1,13 @@
- fetch('/api', {
-  method: 'POST',
+ const arr1 = [];
+ 
+fetch('/api', {
+  method: 'POST', 
   headers: {
-    'Content-Type': 'application/json', 
-  },
+  'Content-Type': 'application/json' 
+},
 }).then(blob => blob.json())
-  .then(data => arr1.push(...data));
+.then(data => arr1.push(...data));
 
-const searchInput = document.querySelector('.userInput');
-const suggestions = document.querySelector('.suggestions');
-searchInput.addEventListener('keyup',displayMatches);
-
-const arr1 = [];
 
 function findMatches(wordToMatch, arr1) {  
     return arr1.filter((restaurant) => {
@@ -44,6 +41,11 @@ function displayMatches() {
     }).json('');
     suggestions.innerHTML = html;
 }
+
+const searchInput = document.querySelector('.userInput');
+const suggestions = document.querySelector('.suggestions');
+
+searchInput.addEventListener('keyup',displayMatches);
 
 
 

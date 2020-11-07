@@ -3,7 +3,6 @@
 /* eslint-disable no-unused-vars */
 import express from 'express';
 import dotenv from 'dotenv';
-// import countries from './public/lab_6/countries.js';
 import fetch from 'node-fetch';
 
 dotenv.config();
@@ -22,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.route('/api')
-  .get(async function (req, res) {
+  .get(async(req, res) => {
       console.log('GET request detected');
       res.send(`Lab 5 for ${process.env.NAME}`);
     })
