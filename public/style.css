@@ -18,3 +18,7 @@ body {
    /* background-color: #FFCD23;*/
     background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(177,190,11,1) 33%, rgba(0,212,255,1) 100%);
 }
+
+.content {
+    background-color:white;
+}

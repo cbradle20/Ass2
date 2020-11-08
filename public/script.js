@@ -12,7 +12,7 @@ fetch('/api', {
 function findMatches(wordToMatch, arr1) {  
     return arr1.filter((restaurant) => {
         const regex = new RegExp(wordToMatch, 'gi');
-        return restaurant.name.match(regex) || restaurant.category.match(regex); //|| restaurant.city.match(regex) || restaurant.state.match(regex) || restaurant.address_line_1.match(regex);
+        return restaurant.name.match(regex) || restaurant.category.match(regex) || restaurant.address_line_1.match(regex); /*|| restaurant.city.match(regex) || restaurant.state.match(regex)*/ 
 
     });
 }
@@ -33,10 +33,19 @@ function displayMatches() {
      // value}</span>`)
 
         return `
+        <div class="content">
         <li>
             <span class="name">${restaurant.name} </span>
+        
+        <ul><li>
             <span class="category">${restaurant.category}</span>
-        </li>
+            </li>
+            <li>
+            <span class="address">${restaurant.address_line_1}</span>
+            </li>
+            </ul>
+            </li>
+        </div>
         `;
     });
     suggestions.innerHTML = html;
