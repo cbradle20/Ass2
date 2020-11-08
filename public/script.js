@@ -17,9 +17,17 @@ function findMatches(wordToMatch, arr1) {
     });
 }
 
+/*I looked very briefly at some examples
+online while seeing if a titlecase function already existed. I got the first part of this function 
+frome examples on https://www.tutorialspoint.com/how-to-title-case-a-sentence-in-javascript,
+after that part, I looked away and wrote the rest on my own*/
 function toTitleCase(str) {
-    str=str.split(" ")
-    str.forEach
+    let strArray=str.toLowerCase().split(" ")
+    let finalArr=[]
+    strArray.forEach(element => finalArr.push(element.replace(element[0],element[0].toUpperCase())));
+    const arrayStr=finalArr.join(" ")
+    console.log(arrayStr)
+    return arrayStr
 }
 
 function displayMatches() { 
@@ -43,9 +51,9 @@ function displayMatches() {
             <h1><span class="name">${restaurant.name} </span></h1>
         
         
-            <h2><span class="category">${restaurant.category}</span></h2>
+            <h2><span class="category">${toTitleCase(String(restaurant.category))}</span></h2>
             
-            <h2><span class="address">${restaurant.address_line_1}</span></h2>
+            <h2><span class="address">${toTitleCase(String(restaurant.address_line_1))}</span></h2>
             
         </div>
         `;
