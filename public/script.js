@@ -17,6 +17,11 @@ function findMatches(wordToMatch, arr1) {
     });
 }
 
+function toTitleCase(str) {
+    str=str.split(" ")
+    str.forEach
+}
+
 function displayMatches() { 
     const matchArray = findMatches(this.value, arr1);
     const html = matchArray.map(restaurant => { 
@@ -34,17 +39,14 @@ function displayMatches() {
 
         return `
         <div class="content">
-        <li>
-            <span class="name">${restaurant.name} </span>
         
-        <ul><li>
-            <span class="category">${restaurant.category}</span>
-            </li>
-            <li>
-            <span class="address">${restaurant.address_line_1}</span>
-            </li>
-            </ul>
-            </li>
+            <h1><span class="name">${restaurant.name} </span></h1>
+        
+        
+            <h2><span class="category">${restaurant.category}</span></h2>
+            
+            <h2><span class="address">${restaurant.address_line_1}</span></h2>
+            
         </div>
         `;
     });
