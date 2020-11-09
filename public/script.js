@@ -41,7 +41,7 @@ function displayMatches() {
         
             <h2><span class="category">${toTitleCase(String(restaurant.category))}</span></h2>
             
-            <h2><span class="address">${toTitleCase(String(restaurant.address_line_1))}</span></h2>
+            <h2><span class="address"><address>${toTitleCase(String(restaurant.address_line_1))}</address></span></h2>
             
         </div>
         `;
