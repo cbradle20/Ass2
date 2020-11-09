@@ -2,16 +2,19 @@ body {
     background-color:#CF102D;
 }
 
+
 .header {
     font-family: Spectral SC;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: bold 500;
+    font-size: x-large;
     display:flex;
     flex-wrap:wrap;
     justify-content: flex-start;
-    
-
-
+    color: white;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .wrapper {
@@ -23,12 +26,16 @@ body {
     padding: 20px;
 }
 
-.container {
-   /* background-color: #FFCD23;*/
-    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(177,190,11,1) 33%, rgba(0,212,255,1) 100%);
+.content {
+    font-family: Spectral SC;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,213,32,1) 100%, rgba(0,212,255,1) 100%);
+    color:white;
+    width: 500px;
+    margin: auto;
 }
 
-.content {
-    /*font-family: Spectral SC;*/
-    background-color: #FFCD23;
+.userInput {
+    width: 535px;
+
 }
