@@ -22,7 +22,7 @@ online while seeing if a titlecase function already existed. I got the first par
 frome examples on https://www.tutorialspoint.com/how-to-title-case-a-sentence-in-javascript,
 after that part, I looked away and wrote the rest on my own*/
 function toTitleCase(str) {
-    let strArray=str.toLowerCase().split(" ")
+    const strArray=str.toLowerCase().split(" ")
     let finalArr=[]
     strArray.forEach(element => finalArr.push(element.replace(element[0],element[0].toUpperCase())));
     const arrayStr=finalArr.join(" ")

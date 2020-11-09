@@ -4,17 +4,19 @@ body {
 
 
 .header {
-    font-family: Spectral SC;
+    font-family: Goldman;
     text-decoration: underline;
     font-weight: bold 500;
-    font-size: x-large;
+    font-size: medium;
     display:flex;
     flex-wrap:wrap;
     justify-content: flex-start;
+    
     color: white;
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
+    
 }
 
 .wrapper {
@@ -22,20 +24,39 @@ body {
     display:flex;
     flex-wrap:wrap;
     justify-content: flex-start;
+    
     margin: 10px;
     padding: 20px;
 }
 
 .content {
-    font-family: Spectral SC;
+    font-family: Goldman;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,213,32,1) 100%, rgba(0,212,255,1) 100%);
     color:white;
     width: 500px;
     margin: auto;
+    
 }
 
 .userInput {
     width: 535px;
 
 }
+
+
+@media screen and (max-width: 1600px) {
+    .header {
+        font-family: Goldman;
+        text-decoration: underline;
+        font-weight: bold 500;
+        font-size: medium;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        
+        color: white;
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+  }
